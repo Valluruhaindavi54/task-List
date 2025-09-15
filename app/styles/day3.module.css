@@ -1,0 +1,109 @@
+ .container {
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  min-height: 100vh;
+  color: #000;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #000;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+.tableContainer {
+  margin-top: 1rem;
+  overflow-x: auto;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  color: #000;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #000;
+}
+
+.table th,
+.table td {
+  border: 2px solid black; /* Strong visible border */
+  padding: 1rem; /* Proper padding for clarity */
+  text-align: left;
+}
+
+.table th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+  color: #000;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.table tr:hover {
+  background-color: #e5e7eb;
+  transition: background-color 0.2s ease;
+}
+
+.bothTablesContainer {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bothTablesContainer .tableContainer {
+  flex: 1 1 45%;
+}
+
+@media (max-width: 768px) {
+  .bothTablesContainer {
+    flex-direction: column;
+  }
+
+  .bothTablesContainer .tableContainer {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .tableContainer {
+    padding: 0.5rem;
+  }
+
+  .table th,
+  .table td {
+    padding: 0.5rem;
+  }
+}

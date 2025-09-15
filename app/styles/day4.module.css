@@ -1,0 +1,90 @@
+ 
+.container {
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  min-height: 100vh;
+  color: #000; 
+}
+
+ 
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #000; 
+  text-align: center;
+}
+
+ 
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+ 
+.button {
+  padding: 0.75rem 1.5rem;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.button:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+ 
+.tableContainer {
+  margin-top: 1rem;
+  overflow-x: auto;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  color: #000; /* Added: table text color black */
+}
+
+ 
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  color: #000; 
+}
+
+.table th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+  color: #000; 
+}
+
+.table tr:hover {
+  background-color: #f1f5f9;
+  transition: background-color 0.2s ease;
+}
+
+ 
+@media (max-width: 640px) {
+  .tableContainer {
+    padding: 0.5rem;
+  }
+
+  .table th,
+  .table td {
+    padding: 0.5rem;
+  }
+}
