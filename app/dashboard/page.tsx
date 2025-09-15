@@ -1,6 +1,5 @@
  import styles from '../../styles/dashboard.module.css';
 import Link from 'next/link';
- 
 
 export default function DashboardPage() {
   return (
@@ -22,6 +21,10 @@ export default function DashboardPage() {
 
         <Link href="/day4" className={styles.taskItem}>
           <span className={styles.taskLink}>✅ Day 4: Advanced Features (Coming Soon)</span>
+        </Link>
+
+        <Link href="/day9" className={styles.taskItem}>
+          <span className={styles.taskLink}>✅ Day 9: Performance & Deployment</span>
         </Link>
       </div>
     </div>

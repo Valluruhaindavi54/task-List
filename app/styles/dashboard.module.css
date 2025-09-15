@@ -1,33 +1,36 @@
- /* styles/dashboard.module.css */
-.container {
+ .container {
   padding: 2rem;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  min-height: 100vh;
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .taskList {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 1rem;
 }
 
 .taskItem {
-  padding: 0.75rem 1rem;
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-  transition: background 0.2s;
-}
-
-.taskItem:hover {
-  background: #f0f0f0;
+  text-decoration: none;
 }
 
 .taskLink {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
+  display: block;
+  padding: 0.75rem 1rem;
+  background-color: #0070f3;
+  color: white;
+  border-radius: 5px;
+}
+
+.taskLink:hover {
+  background-color: #0051a3;
 }
