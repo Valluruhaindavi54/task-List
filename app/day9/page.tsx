@@ -3,9 +3,8 @@
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import styles from './day9.module.css';
+import Chart from '../components/Chart';
 
-// Dynamically import Chart component
-const Chart = dynamic(() => import('../components/Chart'), { ssr: false });
 
 const Day9Page: React.FC = () => {
   return (

@@ -1,5 +1,6 @@
- import Link from 'next/link';
-import styles from '../../styles/dashboard.module.css';
+ import styles from '../../styles/dashboard.module.css';
+import Link from 'next/link';
+ 
 
 export default function DashboardPage() {
   return (
